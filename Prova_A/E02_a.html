@@ -9,11 +9,13 @@
     */
 
     //ENTRADA
-
+    const PreçoVinho = Number(prompt("informe o preço do vinho").replace(",", "."));
 
     //PROCESSAMENTO
-
-
+    const VinhoMl = 750;
+    const VinhoPMes = (365 / 2) * 2;
+    const Litro2Anos = VinhoPMes * VinhoMl;
+    const PreçoTotal = PreçoVinho * VinhoPMes;
     //SAÍDA
-
+    alert(`seu comsumo de vinho foi de ${Litro2Anos.toFixed(2)} e voce gastou ${PreçoTotal.toFixed(2)}Reais.`);
 </script>
